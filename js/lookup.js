@@ -12,4 +12,4 @@ Lookup.prototype.getRepos = function(username, displayFunction) {
   });
 };
 
-exports.lookupModule = Lookup;
+exports.lookupModule = Lookup; 
