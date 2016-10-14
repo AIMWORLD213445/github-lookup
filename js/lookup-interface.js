@@ -10,4 +10,9 @@ $(document).ready(function() {
     var username = $('#username').val();
     usernameRepo.getRepos(username, displayRepos);
   });
+  $('#Reset').click(function() {
+    $('#showRepoInfo').empty();
+  });
+
+
 });
