@@ -5,11 +5,15 @@ function Lookup() {
 
 Lookup.prototype.getRepos = function(username, displayFunction) {
   $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey).then(function(response){
-    console.log(response);
-    displayFunction(response);
+
+for (var i = 0; i<response.length; i++) {
+    console.log(response[i].name);
+    displayFunction(response[i].name);
+    displayFunction(response[i].description);
+  }
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });
 };
 
-exports.lookupModule = Lookup; 
+exports.lookupModule = Lookup;

@@ -1,7 +1,7 @@
 var Lookup = require('./../js/lookup.js').lookupModule;
 
 var displayRepos = function(repoInfo) {
-  $('#showRepoInfo').text(JSON.stringify(repoInfo));
+  $('#showRepoInfo').append('br' + repoInfo +  'br');
 };
 
 $(document).ready(function() {
