@@ -10,7 +10,7 @@ _A GitHub Lookup application that allows users to view public repositories and d
 
 ## Setup/Installation Requirements
 
-_Clone the repo and open it up. Make sure to do the following so you can use the necessary npm/gulp/bower/SASS packages:
+_Clone the repo and open it up. Make sure to do the following so you can use the necessary npm/gulp/bower/SASS packages and utilities:
 npm init
 npm install gulp --save-dev
 npm install browserify --save-dev
