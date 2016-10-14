@@ -3,8 +3,9 @@ var apiKey = require('./../.env').apiKey;
 function Lookup() {
 }
 
-Lookup.prototype.getRepos = function(userName, displayFunction){
-  $.get('https://api.github.com/users/' + userName + '/repos?access_token=' + apiKey).then(function(response){
+Lookup.prototype.getRepos = function(username, displayFunction) {
+  $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey).then(function(response){
+    console.log(response);
     displayFunction(response);
   }).fail(function(error){
     console.log(error.responseJSON.message);
