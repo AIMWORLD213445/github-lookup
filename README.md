@@ -39,8 +39,7 @@ _
 
 * Behavior: gather input and return values associated with that input
   * **Example input:** a GitHub username
-  * **Example output:**
-* Behavior: Correctly associate the input username with their public repositories and descriptions of their various projects
+  * **Example output:** list of repository names and descriptions associated with that user
 
 
 ## Known Bugs
