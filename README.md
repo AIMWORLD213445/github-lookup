@@ -11,27 +11,7 @@ _A GitHub Lookup application that allows users to view public repositories and d
 ## Setup/Installation Requirements
 
 _Clone the repo and open it up. Make sure to do the following so you can use the necessary npm/gulp/bower/SASS packages and utilities:
-npm init
-npm install gulp --save-dev
-npm install browserify --save-dev
-npm install gulp -g
-npm install vinyl-source-stream --save-dev
-npm install gulp-concat --save-dev
-npm install gulp-uglify --save-dev
-npm install gulp-util --save-dev
-npm install del --save-dev
-npm install jshint --save-dev
-npm install gulp-jshint --save-dev
-npm install bower -g
-bower init
-bower install jquery --save
-bower install
-bower install bootstrap --save
-bower install moment --save
-npm install bower-files --save-dev
-npm install browser-sync --save-dev
-npm install gulp-sass gulp-sourcemaps --save-dev
-
+ *The package.JSON should have everything, so just use "npm install" and "bower install" to download everything in git. The gulpfile.js for this project should let you just use "gulp serve" to open up the web app once everything is downloaded. Be sure to use a .env file with exports.apiKey exporting your GitHub API key set equal to the "apiKey" variable used in lookup.js
 
 _
 
